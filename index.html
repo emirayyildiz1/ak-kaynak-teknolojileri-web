@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A.K. Kaynak Teknolojileri | Profesyonel Kaynak Hizmetleri - Eren Kılıç & Yunus Emre Akdoğan</title>
+  <meta name="description"
+    content="A.K. Kaynak Teknolojileri - Eren Kılıç ve Yunus Emre Akdoğan tarafından kurulan profesyonel kaynak hizmetleri. Elektrod (MMA), Gazaltı (MIG/MAG), TIG (Argon) ve Punta kaynak uygulamaları ile endüstriyel çözümler." />
+  <meta name="keywords"
+    content="kaynak, kaynakçı, elektrot kaynak, gazaltı kaynak, punta kaynak, tig kaynak, metal kaynak, profesyonel kaynak hizmetleri, bağcılar kaynakçı" />
+  <meta name="author" content="A.K. Kaynak Teknolojileri" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="A.K. Kaynak Teknolojileri | Profesyonel Kaynak Hizmetleri" />
+  <meta property="og:description"
+    content="Metale şekil veren ustalık, güven veren sağlamlık. Profesyonel kaynak çözümleri." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23f97316'/%3E%3Ctext x='50' y='68' font-family='Arial' font-weight='900' font-size='50' fill='%23000' text-anchor='middle'%3EAK%3C/text%3E%3C/svg%3E" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Lucide Icons (CDN) -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════ PRELOADER ═══════════════ -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-icon">AK</div>
+    <div class="preloader-text">Yükleniyor...</div>
+  </div>
+
+  <!-- ═══════════════ HEADER ═══════════════ -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <!-- Logo -->
+      <a href="#anasayfa" class="logo">
+        <div class="logo-icon">AK</div>
+        <div class="logo-text">A.K. <span>Kaynak Teknolojileri</span></div>
+      </a>
+
+      <!-- Masaüstü Navigasyon -->
+      <nav class="nav-desktop" id="navDesktop">
+        <ul>
+          <li><a href="#anasayfa">Ana Sayfa</a></li>
+          <li><a href="#hakkimizda">Hakkımızda</a></li>
+          <li><a href="#hizmetler">Hizmetler</a></li>
+          <li><a href="#urunler">Ürünler</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+          <li><a href="#yorumlar">Yorumlar</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hamburger Menü Butonu -->
+      <button class="hamburger" id="hamburger" aria-label="Menüyü aç">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobil Navigasyon -->
+  <nav class="nav-mobile" id="navMobile">
+    <ul>
+      <li><a href="#anasayfa">Ana Sayfa</a></li>
+      <li><a href="#hakkimizda">Hakkımızda</a></li>
+      <li><a href="#hizmetler">Hizmetler</a></li>
+      <li><a href="#urunler">Ürünler</a></li>
+      <li><a href="#galeri">Galeri</a></li>
+      <li><a href="#iletisim">İletişim</a></li>
+      <li><a href="#yorumlar">Yorumlar</a></li>
+    </ul>
+  </nav>
+
+  <!-- ═══════════════ HERO SECTION ═══════════════ -->
+  <section class="hero" id="anasayfa">
+    <!-- Arka Plan Slider -->
+    <div class="hero-slider">
+      <div class="hero-slide active">
+        <img src="./anasayfa_arkaya_gelecek_fotolar/1.jpeg" alt="A.K. Kaynak - Profesyonel Kaynak İşleri" />
+      </div>
+      <div class="hero-slide">
+        <img src="./anasayfa_arkaya_gelecek_fotolar/2.jpeg" alt="A.K. Kaynak - Metal İşçiliği" />
+      </div>
+      <div class="hero-slide">
+        <img src="./anasayfa_arkaya_gelecek_fotolar/3.jpeg" alt="A.K. Kaynak - Endüstriyel Kaynak" />
+      </div>
+      <div class="hero-slide">
+        <img src="./anasayfa_arkaya_gelecek_fotolar/4.jpeg" alt="A.K. Kaynak - Uzman Kaynakçı" />
+      </div>
+    </div>
+
+    <!-- Koyu Overlay -->
+    <div class="hero-overlay"></div>
+
+    <!-- Kıvılcım Parçacıkları -->
+    <div class="hero-particles" id="heroParticles"></div>
+
+    <!-- İçerik -->
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Profesyonel Kaynak Hizmetleri
+      </div>
+      <h1 class="hero-title">
+        Metale Şekil Veren <span class="fire-text">Ustalık,</span><br />
+        Güven Veren <span class="fire-text">Sağlamlık</span>
+      </h1>
+      <p class="hero-subtitle">
+        Eren Kılıç ve Yunus Emre Akdoğan'ın deneyim ve titizliğiyle;
+        Elektrod (MMA), Gazaltı (MIG/MAG), TIG (Argon) ve Punta kaynak teknikleriyle projenizi hayata geçiriyoruz.
+      </p>
+      <div class="hero-cta">
+        <a href="#hizmetler" class="btn btn-primary">
+          <span class="btn-icon"><i data-lucide="flame"></i></span>
+          Hizmetlerimizi İnceleyin
+        </a>
+        <a href="#iletisim" class="btn btn-secondary">
+          <span class="btn-icon"><i data-lucide="phone"></i></span>
+          Bize Ulaşın
+        </a>
+      </div>
+    </div>
+
+    <!-- Slider Noktaları -->
+    <div class="hero-slider-dots">
+      <button class="slider-dot active" aria-label="Slayt 1"></button>
+      <button class="slider-dot" aria-label="Slayt 2"></button>
+      <button class="slider-dot" aria-label="Slayt 3"></button>
+      <button class="slider-dot" aria-label="Slayt 4"></button>
+    </div>
+  </section>
+
+  <!-- ═══════════════ İSTATİSTİKLER ═══════════════ -->
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <!-- Stat removed by request -->
+        <div class="stat-item reveal reveal-delay-1">
+          <div class="stat-number" data-target="500" data-suffix="+">0</div>
+          <div class="stat-label">Tamamlanan Proje</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-2">
+          <div class="stat-number" data-target="350" data-suffix="+">0</div>
+          <div class="stat-label">Mutlu Müşteri</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-3">
+          <div class="stat-number" data-target="4" data-suffix="">0</div>
+          <div class="stat-label">Kaynak Tekniği</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ HAKKIMIZDA ═══════════════ -->
+  <section class="about" id="hakkimizda">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Bizi Tanıyın</div>
+        <h2 class="section-title">Kaynak Sektöründe <span class="accent">Güvenin Adı</span></h2>
+        <p class="section-desc">Yılların deneyimi ve tutkusuyla, her projede mükemmelliği hedefliyoruz.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal">
+          <img src="./anasayfa_arkaya_gelecek_fotolar/2.jpeg"
+            alt="A.K. Kaynak Teknolojileri - Eren Kılıç ve Yunus Emre Akdoğan iş başında" />
+        </div>
+
+        <div class="about-content reveal reveal-delay-1">
+          <h3>
+            <span class="accent">A.K. Kaynak Teknolojileri</span> ile Tanışın
+          </h3>
+          <p>
+            Kaynak ve montaj sektöründe <strong>genç, dinamik ve disiplinli</strong> bir ekibiz.
+            Tercih ederseniz işiniz en uygun ve en hızlı şekilde, büyük bir itinayla çözülür.
+          </p>
+          <p>
+            Biz, emekçinin zeki, çevik ve ahlaklı olanını benimseriz. İşimize duyduğumuz saygıyı,
+            teslim ettiğimiz her projede, yaptığımız her kaynakta görebilirsiniz.
+          </p>
+
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="about-feature-icon">🔥</div>
+              <span>Uzman Kadro</span>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">🛡️</div>
+              <span>Güvenli İş</span>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">⚡</div>
+              <span>Hızlı Teslimat</span>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">✅</div>
+              <span>Kalite Garantisi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ HİZMETLER ═══════════════ -->
+  <section class="services" id="hizmetler">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Uzmanlık Alanlarımız</div>
+        <h2 class="section-title">Sunduğumuz <span class="accent">Hizmetler</span></h2>
+        <p class="section-desc">Her teknikte uzmanlaşmış ekibimizle, projenize en uygun kaynak çözümünü sunuyoruz.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Elektrod (MMA) Kaynağı -->
+        <div class="service-card reveal">
+          <div class="service-card-image">
+            <img src="./elektrot_kaynak/1.jpeg" alt="Elektrod (MMA) Kaynağı Hizmeti" />
+            <span class="service-card-number">01</span>
+          </div>
+          <div class="service-card-body">
+            <h3 class="service-card-title">Elektrod (MMA) Kaynağı</h3>
+            <p class="service-card-desc">
+              Örtülü elektrot kaynak yöntemiyle çelik, dökme demir ve alaşımlı metallerde
+              yüksek mukavemetli, dayanıklı birleştirmeler yapıyoruz.
+            </p>
+            <ul class="service-list">
+              <li>Demir kapı imalatı ve tamiri</li>
+              <li>Bahçe kapıları</li>
+              <li>Korkuluk ve merdiven korkulukları</li>
+              <li>Çatı ve sundurma imalatı</li>
+              <li>Çelik konstrüksiyon</li>
+              <li>Konteyner tamiri</li>
+              <li>Demir raf sistemleri</li>
+              <li>Yangın merdiveni</li>
+              <li>Römork ve tarım ekipmanları</li>
+              <li>Acil kırık ve çatlak kaynak tamirleri</li>
+            </ul>
+            <a href="#iletisim" class="service-card-link">
+              Teklif Alın <i data-lucide="arrow-right" style="width:16px;height:16px"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Gazaltı (MIG/MAG) Kaynağı -->
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-card-image">
+            <img src="./gazalti_kaynak/1.jpeg" alt="Gazaltı (MIG/MAG) Kaynağı Hizmeti" />
+            <span class="service-card-number">02</span>
+          </div>
+          <div class="service-card-body">
+            <h3 class="service-card-title">Gazaltı (MIG/MAG) Kaynağı</h3>
+            <p class="service-card-desc">
+              MIG/MAG gazaltı kaynak tekniğiyle ince ve kalın saclardan yapısal çelik
+              konstrüksiyonlara kadar geniş bir alanda hızlı, temiz ve verimli çözümler.
+            </p>
+            <ul class="service-list">
+              <li>Demir mobilya</li>
+              <li>Masa ve sandalye iskeletleri</li>
+              <li>Ferforje ürünler</li>
+              <li>Çelik kapılar</li>
+              <li>Çelik raf sistemleri</li>
+              <li>Depo ve fabrika imalatları</li>
+              <li>Otomotiv şasi ve kasa işleri</li>
+              <li>Makine şaseleri</li>
+              <li>Hafif çelik konstrüksiyon</li>
+            </ul>
+            <a href="#iletisim" class="service-card-link">
+              Teklif Alın <i data-lucide="arrow-right" style="width:16px;height:16px"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- TIG (Argon) Kaynağı -->
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-card-image">
+            <img src="./tig_kaynak/1.jpeg" alt="TIG (Argon) Kaynağı Hizmeti" />
+            <span class="service-card-number">03</span>
+          </div>
+          <div class="service-card-body">
+            <h3 class="service-card-title">TIG (Argon) Kaynağı</h3>
+            <p class="service-card-desc">
+              Tungsten Inert Gas (TIG) yöntemiyle paslanmaz çelik, alüminyum ve özel
+              alaşımlarda hassas, temiz ve estetik kaynak dikişleri.
+            </p>
+            <ul class="service-list">
+              <li>Paslanmaz korkuluk</li>
+              <li>Paslanmaz mutfak ekipmanları</li>
+              <li>Alüminyum kaynak işleri</li>
+              <li>Dekoratif metal ürünler</li>
+              <li>Bisiklet ve motosiklet parçaları</li>
+              <li>Gıda sektörüne yönelik paslanmaz imalatlar</li>
+              <li>İnce sac işleri</li>
+              <li>Tekne ve yat parçaları</li>
+            </ul>
+            <a href="#iletisim" class="service-card-link">
+              Teklif Alın <i data-lucide="arrow-right" style="width:16px;height:16px"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Punta Kaynağı -->
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-card-image">
+            <img src="./pumta_kaynak/1.jpeg" alt="Punta Kaynağı Hizmeti" />
+            <span class="service-card-number">04</span>
+          </div>
+          <div class="service-card-body">
+            <h3 class="service-card-title">Punta Kaynağı</h3>
+            <p class="service-card-desc">
+              Direnç kaynağı (punta) yöntemiyle ince metal sacları hızlı ve estetik
+              bir şekilde birleştiriyoruz.
+            </p>
+            <ul class="service-list">
+              <li>Otomobil kaporta onarımı</li>
+              <li>Beyaz eşya üretimi</li>
+              <li>Metal dolap üretimi</li>
+              <li>Elektrik panosu imalatı</li>
+              <li>Sac kutu ve kasa üretimi</li>
+              <li>Havalandırma kanalları</li>
+              <li>İnce sac montaj işleri</li>
+            </ul>
+            <a href="#iletisim" class="service-card-link">
+              Teklif Alın <i data-lucide="arrow-right" style="width:16px;height:16px"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ ÜRÜNLER ═══════════════ -->
+  <section class="products" id="urunler">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Ürünlerimiz</div>
+        <h2 class="section-title">Hazır <span class="accent">Ürünler</span></h2>
+      </div>
+
+      <div class="products-coming-soon reveal">
+        <div class="coming-soon-icon">🔧</div>
+        <h3 class="coming-soon-title">Hazır Ürün Satışlarımız Yakında Başlayacaktır</h3>
+        <p class="coming-soon-desc">
+          Özel tasarım metal ürünlerimizi ve hazır parçalarımızı çok yakında bu bölümde
+          sizlerle buluşturacağız. Gelişmelerden haberdar olmak için bizimle iletişime geçin.
+        </p>
+        <a href="#iletisim" class="btn btn-primary">
+          <i data-lucide="bell" style="width:18px;height:18px"></i>
+          Bilgi Almak İstiyorum
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ GALERİ ═══════════════ -->
+  <section class="gallery" id="galeri">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Çalışmalarımız</div>
+        <h2 class="section-title">Proje <span class="accent">Galerisi</span></h2>
+        <p class="section-desc">Tüm kaynak tekniklerinden seçilmiş işlerimizi keşfedin.</p>
+      </div>
+
+      <!-- Filtre Butonları -->
+      <div class="gallery-filter reveal">
+        <button class="gallery-filter-btn active" data-filter="all">Tümü</button>
+        <button class="gallery-filter-btn" data-filter="elektrot">Elektrot</button>
+        <button class="gallery-filter-btn" data-filter="gazalti">Gazaltı</button>
+        <button class="gallery-filter-btn" data-filter="pumta">Punta</button>
+        <button class="gallery-filter-btn" data-filter="tig">TIG</button>
+      </div>
+
+      <!-- Masonry Grid -->
+      <div class="gallery-masonry" id="galleryGrid">
+        <!-- Elektrot Kaynak -->
+        <div class="gallery-item" data-category="elektrot">
+          <img src="./elektrot_kaynak/1.jpeg" alt="Elektrot Kaynak İşi 1" />
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-label">Elektrot Kaynağı</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="elektrot">
+          <img src="./elektrot_kaynak/2.jpeg" alt="Elektrot Kaynak İşi 2" />
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-label">Elektrot Kaynağı</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="elektrot">
+          <img src="./elektrot_kaynak/3.jpeg" alt="Elektrot Kaynak İşi 3" />
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-label">Elektrot Kaynağı</span>
+          </div>
+        </div>
+
+        <!-- Gazaltı Kaynak -->
+        <div class="gallery-item" data-category="gazalti">
+          <img src="./gazalti_kaynak/1.jpeg" alt="Gazaltı Kaynak İşi 1" />
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-label">Gazaltı Kaynağı</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="gazalti">
+          <img src="./gazalti_kaynak/2.jpeg" alt="Gazaltı Kaynak İşi 2" />
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-label">Gazaltı Kaynağı</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="gazalti">
+          <img src="./gazalti_kaynak/3.jpeg" alt="Gazaltı Kaynak İşi 3" />
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-label">Gazaltı Kaynağı</span>
+          </div>
+        </div>
+
+        <!-- Punta Kaynak -->
+        <div class="gallery-item" data-category="pumta">
+          <img src="./pumta_kaynak/1.jpeg" alt="Punta Kaynak İşi 1" />
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-label">Punta Kaynağı</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="pumta">
+          <img src="./pumta_kaynak/2.jpeg" alt="Punta Kaynak İşi 2" />
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-label">Punta Kaynağı</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="pumta">
+          <img src="./pumta_kaynak/3.jpeg" alt="Punta Kaynak İşi 3" />
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-label">Punta Kaynağı</span>
+          </div>
+        </div>
+
+        <!-- TIG Kaynak -->
+        <div class="gallery-item" data-category="tig">
+          <img src="./tig_kaynak/1.jpeg" alt="TIG Kaynak İşi 1" />
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-label">TIG Kaynağı</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="tig">
+          <img src="./tig_kaynak/2.jpeg" alt="TIG Kaynak İşi 2" />
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-label">TIG Kaynağı</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="tig">
+          <img src="./tig_kaynak/3.jpeg" alt="TIG Kaynak İşi 3" />
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-label">TIG Kaynağı</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ İLETİŞİM ═══════════════ -->
+  <section class="contact" id="iletisim">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">İletişime Geçin</div>
+        <h2 class="section-title">Projenizi <span class="accent">Konuşalım</span></h2>
+        <p class="section-desc">Sorularınız veya teklif talepleriniz için bizimle iletişime geçin.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- İletişim Bilgileri -->
+        <div class="contact-info">
+          <div class="contact-info-card reveal">
+            <div class="contact-info-icon">
+              <i data-lucide="map-pin"></i>
+            </div>
+            <div>
+              <h4>Adresimiz</h4>
+              <p>Fevzi Çakmak Mahallesi, 2010 Sokak No: 9 <br />Bağcılar / İstanbul</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card reveal reveal-delay-1">
+            <div class="contact-info-icon">
+              <i data-lucide="phone"></i>
+            </div>
+            <div>
+              <h4>Eren Kılıç</h4>
+              <p>
+                <a href="tel:+905305649803">0530 564 98 03</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-info-card reveal reveal-delay-2">
+            <div class="contact-info-icon">
+              <i data-lucide="phone"></i>
+            </div>
+            <div>
+              <h4>Yunus Emre Akdoğan</h4>
+              <p>
+                <a href="tel:+905076901044">0507 690 10 44</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-info-card reveal reveal-delay-3">
+            <div class="contact-info-icon">
+              <i data-lucide="clock"></i>
+            </div>
+            <div>
+              <h4>Çalışma Saatleri</h4>
+              <p>Pazartesi - Cumartesi: 08:00 - 18:00<br />Pazar: Kapalı</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- İletişim Formu -->
+        <div class="contact-form-wrapper reveal">
+          <h3>Bize Mesaj Gönderin</h3>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">Ad</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Adınız" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Soyad</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Soyadınız" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Telefon</label>
+                <input type="tel" id="phone" name="phone" placeholder="+90 (5XX) XXX XX XX" />
+              </div>
+              <div class="form-group">
+                <label for="serviceType">Hizmet Türü</label>
+                <select id="serviceType" name="serviceType">
+                  <option value="" disabled selected>Hizmet seçiniz</option>
+                  <option value="elektrot">Elektrod (MMA) Kaynağı</option>
+                  <option value="gazalti">Gazaltı (MIG/MAG) Kaynağı</option>
+                  <option value="tig">TIG (Argon) Kaynağı</option>
+                  <option value="punta">Punta Kaynağı</option>
+                  <option value="diger">Diğer</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 16px;">
+              <label for="message">Mesajınız</label>
+              <textarea id="message" name="message" placeholder="Projeniz hakkında bize bilgi verin..." rows="5"
+                required></textarea>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary">
+                <i data-lucide="send" style="width:18px;height:18px"></i>
+                Mesajı Gönder
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Google Maps -->
+      <div class="contact-map reveal">
+        <iframe
+          src="https://maps.google.com/maps?q=Fevzi%20%C3%87akmak%20Mahallesi%202010%20sokak%20no%209%20Ba%C4%9Fc%C4%B1lar%20%C4%B0stanbul&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="A.K. Kaynak Teknolojileri Konum">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ YORUMLAR ═══════════════ -->
+  <section class="comments-section" id="yorumlar">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Müşteri Yorumları</div>
+        <h2 class="section-title">Sizden Gelen <span class="accent">Değerlendirmeler</span></h2>
+        <p class="section-desc">Deneyimlerinizi bizimle paylaşın.</p>
+        <div class="comments-badge"
+          style="margin-top: 15px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: rgba(249, 115, 22, 0.1); color: var(--primary); padding: 8px 16px; border-radius: 30px; font-weight: 600; font-size: 0.9rem;">
+          <i data-lucide="users" style="width:18px;height:18px;"></i>
+          <span>100+ Mutlu Müşteri Yorumu</span>
+        </div>
+      </div>
+
+      <div class="comments-container reveal">
+        <!-- Yorum Formu -->
+        <div class="comment-form-wrapper">
+          <h3>Yorum Yap</h3>
+          <form id="commentForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="commentName">Adınız Soyadınız</label>
+                <input type="text" id="commentName" name="commentName" placeholder="Ad Soyad" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="commentText">Yorumunuz</label>
+              <textarea id="commentText" name="commentText"
+                placeholder="Hizmetimiz hakkındaki düşüncelerinizi paylaşın..." rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submitCommentBtn">
+              <i data-lucide="message-square" style="width:18px;height:18px"></i> Yorumu Gönder
+            </button>
+          </form>
+        </div>
+
+        <!-- Yorum Listesi -->
+        <div class="comments-list" id="commentsList">
+          <!-- Dinamik olarak JS ile veya Firebase üzerinden doldurulacak -->
+          <div class="comment-item">
+            <div class="comment-avatar">M</div>
+            <div class="comment-content">
+              <h4 class="comment-author">Murat Yılmaz</h4>
+              <span class="comment-date">2 gün önce</span>
+              <p class="comment-text">Ekip çok profesyonel, demir kapı tamir işimizi çok hızlı bir şekilde çözdüler.
+                Elinize sağlık.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Marka -->
+        <div class="footer-brand">
+          <a href="#anasayfa" class="logo">
+            <div class="logo-icon">AK</div>
+            <div class="logo-text">A.K. <span>Kaynak Teknolojileri</span></div>
+          </a>
+          <p>
+            Eren Kılıç ve Yunus Emre Akdoğan'ın uzmanlığıyla, metal işçiliğinde
+            kalite ve güvenin adresi. Her projede mükemmelliği hedefliyoruz.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+            <a href="#" aria-label="Youtube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
+                <path d="m10 15 5-3-5-3z" />
+              </svg>
+            </a>
+            <a href="https://wa.me/905305649803" aria-label="WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hızlı Linkler -->
+        <div>
+          <h4 class="footer-heading">Hızlı Linkler</h4>
+          <ul class="footer-links">
+            <li><a href="#anasayfa">Ana Sayfa</a></li>
+            <li><a href="#hakkimizda">Hakkımızda</a></li>
+            <li><a href="#hizmetler">Hizmetler</a></li>
+            <li><a href="#urunler">Ürünler</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+          </ul>
+        </div>
+
+        <!-- Hizmetler -->
+        <div>
+          <h4 class="footer-heading">Hizmetlerimiz</h4>
+          <ul class="footer-links">
+            <li><a href="#hizmetler">Elektrod (MMA) Kaynağı</a></li>
+            <li><a href="#hizmetler">Gazaltı (MIG/MAG) Kaynağı</a></li>
+            <li><a href="#hizmetler">TIG (Argon) Kaynağı</a></li>
+            <li><a href="#hizmetler">Punta Kaynağı</a></li>
+          </ul>
+        </div>
+
+        <!-- İletişim -->
+        <div>
+          <h4 class="footer-heading">İletişim</h4>
+          <div class="footer-contact-item">
+            <i data-lucide="map-pin" style="width:16px;height:16px"></i>
+            <span>Bağcılar / İstanbul</span>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="phone" style="width:16px;height:16px"></i>
+            <span>Eren: 0530 564 98 03</span>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="phone" style="width:16px;height:16px"></i>
+            <span>Yunus Emre: 0507 690 10 44</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alt Bilgi -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 <a href="#anasayfa">A.K. Kaynak Teknolojileri</a> - Made by Emir Ayyıldız. Tüm hakları saklıdır.
+          emirayyildiz.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════ LIGHTBOX ═══════════════ -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Kapat">✕</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="Galeri Görseli" />
+  </div>
+
+  <!-- ═══════════════ WHATSAPP FLOATING BUTTON ═══════════════ -->
+  <a href="https://wa.me/905305649803?text=Merhaba%2C%20A.K.%20Kaynak%20Teknolojileri%20hakkında%20bilgi%20almak%20istiyorum."
+    class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp ile iletişime geçin">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#fff">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+    <span class="whatsapp-tooltip">WhatsApp ile yazın</span>
+  </a>
+
+  <!-- ═══════════════ SCROLL TO TOP ═══════════════ -->
+  <button class="scroll-top" id="scrollTopBtn" aria-label="Yukarı çık">
+    <i data-lucide="chevron-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics-compat.js"></script>
+  <script src="./js/main.js"></script>
+  <script>
+    // Lucide ikonlarını başlat
+    lucide.createIcons();
+  </script>
+</body>
+
+</html>
